@@ -2,13 +2,13 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {styles} from './style';
 
-const Button = ({title}) => {
+const CustomButton = ({title}) => {
   const handlePress = () => {};
   return (
     <TouchableOpacity style={styles.container} onPress={handlePress}>
-      <Text>{title}</Text>
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default Button;
+export default CustomButton;
