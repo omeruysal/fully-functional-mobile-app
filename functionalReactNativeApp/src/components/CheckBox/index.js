@@ -3,7 +3,6 @@ import React from 'react';
 import {styles} from './style';
 
 const CheckBox = ({checked, onChecked}) => {
-  console.log('check box');
   return (
     <TouchableOpacity
       style={styles.container}

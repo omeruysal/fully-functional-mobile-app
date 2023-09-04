@@ -34,4 +34,8 @@ export const styles = StyleSheet.create({
     height: 24,
     width: 12,
   },
+  content: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
 });

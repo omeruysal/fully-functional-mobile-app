@@ -1,10 +1,14 @@
 import {StyleSheet} from 'react-native';
+import {colors} from '../../../utils/colors';
 
 export const styles = StyleSheet.create({
   container: {
     padding: 24,
     flexDirection: 'column',
     justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    //borderWidth: 1,
   },
   image: {
     width: '100%',
@@ -20,14 +24,17 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   innerTitle: {
-    color: '#FCA34D',
+    color: colors.orange,
     textDecorationLine: 'underline',
   },
   footer: {
-    color: '#4F63AC',
+    color: colors.blue,
     textAlign: 'center',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
     marginTop: 30,
+  },
+  buttonContainer: {
+    width: '100%',
   },
 });

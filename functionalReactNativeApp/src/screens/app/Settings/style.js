@@ -22,4 +22,13 @@ export const styles = StyleSheet.create({
     paddingVertical: 12,
     marginTop: 16,
   },
+  sectionContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  editIcon: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+  },
 });

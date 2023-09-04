@@ -3,7 +3,13 @@ import React from 'react';
 import {styles} from './styles';
 import CustomButton from '../../../components/Button';
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+  const onSignUp = () => {
+    navigation.navigate('SignUp');
+  };
+  const onSignIn = () => {
+    navigation.navigate('SignIn');
+  };
   return (
     <View style={styles.container}>
       <Image
@@ -16,8 +22,10 @@ const Splash = () => {
         <Text style={[styles.title, styles.innerTitle]}>All you need </Text>
         <Text style={styles.title}>here!</Text>
       </View>
-      <CustomButton title="Sign up" />
-      <Pressable hitSlop={20}>
+      <View style={styles.buttonContainer}>
+        <CustomButton title="Sign up" onPress={onSignUp} />
+      </View>
+      <Pressable hitSlop={20} onPress={onSignIn}>
         <Text style={styles.footer}>Sign In</Text>
       </Pressable>
     </View>

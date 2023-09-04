@@ -2,10 +2,12 @@ import {StyleSheet} from 'react-native';
 import {colors} from '../../utils/colors';
 
 export const styles = StyleSheet.create({
+  mainContainer: {},
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginHorizontal: 20,
   },
   title: {
     color: colors.black,
@@ -15,6 +17,7 @@ export const styles = StyleSheet.create({
   icon: {
     width: 24,
     height: 24,
+    resizeMode: 'contain',
   },
   space: {
     width: 24,
